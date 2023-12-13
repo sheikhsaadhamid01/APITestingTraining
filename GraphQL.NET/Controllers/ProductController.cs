@@ -12,7 +12,7 @@ namespace GraphQLProductApp.Controllers;
 [ApiController]
 // [Authorize]
 [Route("[controller]")]
-public class ProductController : ControllerBase
+public class ProductController : BaseController
 {
     private const string folderName = "files";
     private readonly IProductRepository _productRepository;

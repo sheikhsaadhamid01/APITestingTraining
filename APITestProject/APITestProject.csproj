@@ -24,4 +24,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GraphQL.NET\GraphQLProductApp.csproj" />
+  </ItemGroup>
+
 </Project>
