@@ -11,10 +11,12 @@
 using System;
 using System.Reflection;
 
+[assembly: Xunit.TestFramework("Xunit.DependencyInjection.DependencyInjectionTestFramework", "Xunit.DependencyInjection")]
+[assembly: Xunit.DependencyInjection.StartupType("APITestProject.Startup")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("APITestProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+540b603e6ca15f138ef726aae1baa660681d68b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc308bb9fc558b808b09f8308124e58e59a9983b")]
 [assembly: System.Reflection.AssemblyProductAttribute("APITestProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APITestProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

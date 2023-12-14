@@ -1,10 +1,12 @@
-﻿using FluentAssertions;
+﻿using APITestProject.Base;
+using FluentAssertions;
 using GraphQLProductApp.Controllers;
 using GraphQLProductApp.Data;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,25 +14,18 @@ using Xunit.Abstractions;
 
 namespace APITestProject
 {
-    public class Authentication
+    public class Authentication 
     {
         private readonly ITestOutputHelper _outputHelper;
-        private RestClientOptions _options;
+        private RestClient? client;
 
-        public Authentication(ITestOutputHelper outputHelper)
-        {
-            this._outputHelper = outputHelper;
-            _options = new RestClientOptions
-            {
-                BaseUrl = new Uri("https://localhost:5001/"),
-                RemoteCertificateValidationCallback = (sender, certificate, chain, errors) => true
-            };
-        }
+        public Authentication(IRestLibrary restLibrary) => client = restLibrary.RestClient;
+       
 
         [Fact]
         public async void GetAuthentication()
         {
-            var client = new RestClient(_options);
+           
             RestRequest authRequest = new RestRequest("api/Authenticate/Login");
             authRequest.AddJsonBody(new LoginModel
             {
