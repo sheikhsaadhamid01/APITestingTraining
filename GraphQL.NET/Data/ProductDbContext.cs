@@ -12,7 +12,10 @@ public class ProductDbContext : DbContext
     {
     }
 
+
     public DbSet<Product> Products { get; set; }
 
     public DbSet<Components> Components { get; set; }
+    
+    public DbSet<Manufacturers> Manufacturers { get; set; }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\RestSharpSpecflow\\RestSharpSpecflow.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\RestSharpSpecflow\\RestSharpSpecflow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\GraphQL.NET\\GraphQLProductApp.csproj": {
+    "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\GraphQL.NET\\GraphQLProductApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\GraphQL.NET\\GraphQLProductApp.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\GraphQL.NET\\GraphQLProductApp.csproj",
         "projectName": "GraphQLProductApp",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\GraphQL.NET\\GraphQLProductApp.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\GraphQL.NET\\GraphQLProductApp.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\GraphQL.NET\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\GraphQL.NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,14 +100,14 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\RestSharpSpecflow\\RestSharpSpecflow.csproj": {
+    "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\RestSharpSpecflow\\RestSharpSpecflow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\RestSharpSpecflow\\RestSharpSpecflow.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\RestSharpSpecflow\\RestSharpSpecflow.csproj",
         "projectName": "RestSharpSpecflow",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\RestSharpSpecflow\\RestSharpSpecflow.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\RestSharpSpecflow\\RestSharpSpecflow.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\RestSharpSpecflow\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\RestSharpSpecflow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -124,8 +124,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\GraphQL.NET\\GraphQLProductApp.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\GraphQL.NET\\GraphQLProductApp.csproj"
+              "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\GraphQL.NET\\GraphQLProductApp.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\GraphQL.NET\\GraphQLProductApp.csproj"
               }
             }
           }

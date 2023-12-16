@@ -1,0 +1,16 @@
+﻿version: '3.4'
+services:
+  ea_api:
+    image: ea_api
+    container_name: eaapi
+    build:
+      context: .
+      dockerfile: GraphQL.NET/Dockerfile
+    restart: on-failure
+    ports:
+      - 5001:8000
+    networks:
+      - ea_network
+
+networks:
+  ea_network:

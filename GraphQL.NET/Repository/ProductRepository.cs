@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using GraphQLProductApp.Data;
@@ -33,11 +34,26 @@ public class ProductRepository : IProductRepository
             Name = x.Name,
             Price = x.Price,
             ProductType = x.ProductType,
+            
             Components = x.Components.Select(c => new Components
             {
                 Id = c.Id,
                 Name = c.Name,
-                Description = c.Description
+                Description = c.Description,
+                Manufacturers = c.Manufacturers.Select(m => new Manufacturers
+                {
+                Description = m.Description,
+                Name = m.Name,
+                Id = m.Id,
+                Addresses = m.Addresses.Select(a => new Address
+                {
+                    Id = a.Id,
+                    Street = a.Street,
+                    City = a.City,
+                    State = a.State,
+                    Country = a.Country,
+                }).ToList()
+            }).ToList(),
             }).ToList()
         }).ToList();
     }
@@ -50,11 +66,29 @@ public class ProductRepository : IProductRepository
             Name = x.Name,
             Price = x.Price,
             ProductType = x.ProductType,
+            SystemCreatedDate = x.SystemCreatedDate,
+            UserCreatedDate = DateTime.Now,
             Components = x.Components.Select(c => new Components
             {
                 Id = c.Id,
                 Name = c.Name,
-                Description = c.Description
+                Description = c.Description,
+                SystemCreatedDate = c.SystemCreatedDate,
+                UserCreatedDate = DateTime.Now,
+                Manufacturers = c.Manufacturers.Select(m => new Manufacturers
+                {
+                    Description = m.Description,
+                    Name = m.Name,
+                    Id = m.Id,
+                    Addresses = m.Addresses.Select(a => new Address
+                    {
+                        Id = a.Id,
+                        Street = a.Street,
+                        City = a.City,
+                        State = a.State,
+                        Country = a.Country,
+                    }).ToList()
+                }).ToList(),
             }).ToList()
         }).FirstOrDefault(x => x.ProductId == id);
     }
@@ -67,11 +101,29 @@ public class ProductRepository : IProductRepository
             Name = x.Name,
             Price = x.Price,
             ProductType = x.ProductType,
+            SystemCreatedDate = x.SystemCreatedDate,
+            UserCreatedDate = DateTime.Now,
             Components = x.Components.Select(c => new Components
             {
                 Id = c.Id,
                 Name = c.Name,
-                Description = c.Description
+                Description = c.Description,
+                SystemCreatedDate = c.SystemCreatedDate,
+                UserCreatedDate = DateTime.Now,
+                Manufacturers = c.Manufacturers.Select(m => new Manufacturers
+                {
+                    Description = m.Description,
+                    Name = m.Name,
+                    Id = m.Id,
+                    Addresses = m.Addresses.Select(a => new Address
+                    {
+                        Id = a.Id,
+                        Street = a.Street,
+                        City = a.City,
+                        State = a.State,
+                        Country = a.Country,
+                    }).ToList()
+                }).ToList(),
             }).ToList()
         }).FirstOrDefault(x => x.Name == name);
     }
@@ -91,11 +143,29 @@ public class ProductRepository : IProductRepository
             Name = x.Name,
             Price = x.Price,
             ProductType = x.ProductType,
+            SystemCreatedDate = x.SystemCreatedDate,
+            UserCreatedDate = DateTime.Now,
             Components = x.Components.Select(c => new Components
             {
                 Id = c.Id,
                 Name = c.Name,
-                Description = c.Description
+                Description = c.Description,
+                SystemCreatedDate = c.SystemCreatedDate,
+                UserCreatedDate = DateTime.Now,
+                Manufacturers = c.Manufacturers.Select(m => new Manufacturers
+                {
+                    Description = m.Description,
+                    Name = m.Name,
+                    Id = m.Id,
+                    Addresses = m.Addresses.Select(a => new Address
+                    {
+                        Id = a.Id,
+                        Street = a.Street,
+                        City = a.City,
+                        State = a.State,
+                        Country = a.Country,
+                    }).ToList()
+                }).ToList(),
             }).ToList()
         }).Single(x => x.ProductId == id && x.Name == name);
     }

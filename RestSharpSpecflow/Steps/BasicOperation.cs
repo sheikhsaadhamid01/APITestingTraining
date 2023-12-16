@@ -15,7 +15,8 @@ public sealed class BasicOperation
     private readonly ScenarioContext _scenarioContext;
 
     private RestClient _restClient;
-    private Product? _response;
+    private Product? _firstResponse;
+    private Product? _secondResponse;
     
     public BasicOperation(ScenarioContext scenarioContext)
     {
@@ -35,13 +36,27 @@ public sealed class BasicOperation
         request.AddUrlSegment("id", (int)data.ProductId);
         request.AddHeader("Authorization", $"Bearer {token}");
         //Perform GET operation
-        _response= await _restClient.GetAsync<Product>(request);
+        _firstResponse= await _restClient.GetAsync<Product>(request);
+    }
+    
+    [Given(@"I perform another GET operation ""(.*)""")]
+    public async Task GivenIPerformAnotherGetOperation(string path, Table table)
+    {
+        dynamic data = table.CreateDynamicInstance();
+        var token = GetToken();
+
+        //Rest Request
+        var request = new RestRequest(path);
+        request.AddUrlSegment("id", (int)data.ProductId);
+        request.AddHeader("Authorization", $"Bearer {token}");
+        //Perform GET operation
+        _secondResponse= await _restClient.GetAsync<Product>(request);
     }
 
     [Given(@"I should get the product name as ""(.*)""")]
     public void GivenIShouldGetTheProductNameAs(string value)
     {
-        _response.Name.Should().Be(value);
+        _firstResponse.Name.Should().Be(value);
     }
 
 
@@ -62,5 +77,46 @@ public sealed class BasicOperation
 
         //Token from JSON object
         return JObject.Parse(authResponse)["token"].ToString();
+    }
+
+
+    [Given(@"I should verify if Product is always the same")]
+    public void GivenIShouldVerifyIfProductIsAlwaysTheSame()
+    {
+        _firstResponse.Should().BeEquivalentTo(_secondResponse, opt => 
+            opt
+                .Using<DateTime>(c => 
+                    c
+                        .Subject
+                        .Should()
+                        .BeCloseTo(c.Expectation, TimeSpan.FromHours(24)))
+                .WhenTypeIs<DateTime>()
+        );
+    }
+
+
+    [Given(@"I should verify if Product(.*) and Product(.*) addresses are the same")]
+    public void GivenIShouldVerifyIfProductAndProductAddressesAreTheSame(int p0, int p1)
+    {
+        var firstAddress = _firstResponse.Components.First().Manufacturers.First().Addresses;
+        var secondAddress = _secondResponse.Components.First().Manufacturers.First().Addresses;
+        firstAddress.Should().BeEquivalentTo(secondAddress, opt => 
+            opt.Excluding(c => c.Id));
+    }
+
+    [Given(@"I should verify if Product(.*) and Product(.*) manufacturers are the same")]
+    public void GivenIShouldVerifyIfProductAndProductManufacturersAreTheSame(int p0, int p1)
+    {
+        var firstManufacturers = _firstResponse.Components;
+        var secondManufacturers = _secondResponse.Components;
+
+        firstManufacturers.Should().BeEquivalentTo(secondManufacturers, opt =>
+            opt.Excluding(c => c.Id)
+                .Using<DateTime>(c => 
+                    c
+                        .Subject
+                        .Should()
+                        .BeCloseTo(c.Expectation, TimeSpan.FromHours(24)))
+                .WhenTypeIs<DateTime>());
     }
 }

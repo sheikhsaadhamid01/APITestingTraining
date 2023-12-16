@@ -5,6 +5,9 @@
     &lt;TestAncestor&gt;
       &lt;TestId&gt;xUnit::D15BF078-345B-40A5-AEAE-986CB8B8F80C::net7.0::RestSharpDemoRider.BasicTests&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::D15BF078-345B-40A5-AEAE-986CB8B8F80C::net7.0::RestSharpDemoRider.Authentication.GetWithQueryParameterTest&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::06CCE49C-7E49-4A9B-97DB-ACC221838530::net7.0::RestSharpSpecflow.Features.AdvancedOperationFeature.VerifyIfProduct1IsAlwaysSame&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::06CCE49C-7E49-4A9B-97DB-ACC221838530::net7.0::RestSharpSpecflow.Features.AdvancedOperationFeature.VerifyIfProduct1AndProduct2ManufacturersAddressAreSame&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::06CCE49C-7E49-4A9B-97DB-ACC221838530::net7.0::RestSharpSpecflow.Features.AdvancedOperationFeature.VerifyIfProduct1AndProduct2ManufacturersAreSame&lt;/TestId&gt;
     &lt;/TestAncestor&gt;
   &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
