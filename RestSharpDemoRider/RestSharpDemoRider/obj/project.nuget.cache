@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R0jN19YhkcLX6FasZdwDABf5ZFFbLpYi+G1k7MMjP0c8deOoeqHVMQZ1GpOjbMf1q5j14WtW2H4g1iSnBHLHrA==",
+  "dgSpecHash": "E5/O2CCPfo7fSq2b9EDJVKb8p1819cK6x7HRuG9ajSfGnPM0Wb1DFthPAjHP771Kpm61up2a1K22lcP4Y7p67Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\RestSharpDemoRider\\RestSharpDemoRider\\RestSharpDemoRider.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\RestSharpDemoRider\\RestSharpDemoRider\\RestSharpDemoRider.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

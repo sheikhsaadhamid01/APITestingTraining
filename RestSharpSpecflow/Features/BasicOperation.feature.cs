@@ -100,12 +100,12 @@ namespace RestSharpSpecflow.Features
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                             "ProductId"});
-                table7.AddRow(new string[] {
+                table11.AddRow(new string[] {
                             "1"});
 #line 6
-        testRunner.Given("I perform a GET operation of \"Product/GetProductById/{id}\"", ((string)(null)), table7, "Given ");
+        testRunner.Given("I perform a GET operation of \"Product/GetProductById/{id}\"", ((string)(null)), table11, "Given ");
 #line hidden
 #line 9
         testRunner.And("I should get the product name as \"Keyboard\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

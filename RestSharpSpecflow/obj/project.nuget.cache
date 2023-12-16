@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "paQyCBlKKevVtanj7Zi7BGkKpfpvwSnUN55yIjBrjcQB3bHTQttSEz5sUXJMbWDnagAFLhCvVFSZGLfAcsjNog==",
+  "dgSpecHash": "11/AXIOXwLOSOWPiJNIoHrIWKAE75jrpFVkqTHb+n7ggoYzzthp8DMMN2S6zDmx+LRJJVBCdSQhG0NhClqD08g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Documents\\UpgradedToNET7\\RestSharpSpecflow\\RestSharpSpecflow.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\Trainings\\RestSharp\\APITestingTraining\\RestSharpSpecflow\\RestSharpSpecflow.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\dynamitey\\2.0.9.136\\dynamitey.2.0.9.136.nupkg.sha512",

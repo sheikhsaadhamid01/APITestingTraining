@@ -9,8 +9,8 @@ namespace RestSharpSpecflow.Drivers
         {
             var restClientOptions = new RestClientOptions
             {
-                BaseUrl = new Uri("https://localhost:5001/"),
-                RemoteCertificateValidationCallback = (sender, certificate, chain, errors) => true
+                BaseUrl = new Uri("http://localhost:5001/"),
+                //RemoteCertificateValidationCallback = (sender, certificate, chain, errors) => true
             };
 
             //Rest Client

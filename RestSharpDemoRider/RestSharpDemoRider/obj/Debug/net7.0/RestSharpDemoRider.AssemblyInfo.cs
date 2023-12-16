@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestSharpDemoRider")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2bdfef140ff17804aaa5a4b3c27cf3face2b2d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestSharpDemoRider")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestSharpDemoRider")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
