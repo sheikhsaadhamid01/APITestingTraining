@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="ExtentReports" Version="5.0.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
         <PackageReference Include="RestSharp" Version="110.2.0" />
         <PackageReference Include="SpecFlow.Assist.Dynamic" Version="1.4.2" />

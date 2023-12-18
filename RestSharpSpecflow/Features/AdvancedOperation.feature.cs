@@ -151,7 +151,7 @@ namespace RestSharpSpecflow.Features
                 TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                             "ProductId"});
                 table4.AddRow(new string[] {
-                            "2"});
+                            "5"});
 #line 20
   testRunner.And("I perform another GET operation \"Product/GetProductById/{id}\"", ((string)(null)), table4, "And ");
 #line hidden

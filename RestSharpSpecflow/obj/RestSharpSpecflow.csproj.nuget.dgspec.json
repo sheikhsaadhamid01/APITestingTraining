@@ -140,6 +140,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.11.0, )"

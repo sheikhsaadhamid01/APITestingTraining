@@ -19,7 +19,7 @@ Feature: AdvancedOperation
 		  | 1         |
 		And I perform another GET operation "Product/GetProductById/{id}"
 		  | ProductId |
-		  | 2         |
+		  | 5         |
 		And I should verify if Product1 and Product2 addresses are the same
 		
 	

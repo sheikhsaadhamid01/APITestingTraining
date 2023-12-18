@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestSharpSpecflow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2bdfef140ff17804aaa5a4b3c27cf3face2b2d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab790512044bc420a59510ae3312193fdf6d273b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestSharpSpecflow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestSharpSpecflow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
